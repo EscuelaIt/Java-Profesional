@@ -4,22 +4,16 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-public class FormatterDate {
+public class Prueba {
 
 	public static void main(String[] args) {
 
-		new FormatterDate().imprimirFecha(LocalDateTime.now());
-		
-	}
-
-	public void imprimirFecha(LocalDateTime localDateTime) {
-		
-		Locale.setDefault(Locale.CANADA_FRENCH);
+		Locale.setDefault(Locale.ITALY);
 
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE, d MMM yyyy HH:mm:ss");
 
-		String dateStr = formatter.format(localDateTime);
-		
+		String dateStr = formatter.format(LocalDateTime.now());
+
 		System.out.println(dateStr);
 
 	}

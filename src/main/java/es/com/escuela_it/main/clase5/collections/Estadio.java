@@ -2,6 +2,8 @@ package es.com.escuela_it.main.clase5.collections;
 
 public class Estadio implements Comparable<Estadio>{
 	
+	private int id;
+	
 	private String name;
 	
 	private int aforo;
@@ -75,6 +77,20 @@ public class Estadio implements Comparable<Estadio>{
 	@Override
 	public int compareTo(Estadio o) {
 		return  o.aforo - this.aforo;
+	}
+
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	

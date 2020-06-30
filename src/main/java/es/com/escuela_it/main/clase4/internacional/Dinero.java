@@ -9,6 +9,8 @@ public class Dinero {
 	
 	public static void main(String[] args) {
 		
+		Integer i;
+		
 		BigDecimal presupuesto = new BigDecimal(2332.33);
 		BigDecimal suma = presupuesto.add(new BigDecimal(343434.3));
 		

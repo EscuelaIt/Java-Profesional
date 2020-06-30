@@ -11,7 +11,6 @@ public class Utc {
 		
 		Set<String> zonas = ZoneId.getAvailableZoneIds();
 		
-		
 		for (String zona : zonas) {
 			System.out.println(zona);
 		}

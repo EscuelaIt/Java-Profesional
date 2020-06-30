@@ -11,6 +11,7 @@ public class JodaTime {
 		System.out.println(localDate);
 		
 		localDate = localDate.minusYears(2022);
+		localDate = localDate.plusYears(1);
 		
 		System.out.println(localDate.getDayOfWeek());
 		System.out.println(localDate.getDayOfMonth());
